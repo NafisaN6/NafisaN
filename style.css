@@ -24,7 +24,6 @@ h2 {
     color: #fff;
     text-shadow: 3px 3px #317873;
     margin: 20px 0;
-    animation: fadeIn 1.5s ease forwards;
     text-align: center;
 }
 
@@ -61,7 +60,6 @@ h2 {
     font-family: 'Georgia', serif;
     color: #317873;
     text-shadow: 1px 1px #ffffff;
-    animation: slideIn 1.5s ease forwards;
 }
 
 .container {
@@ -73,7 +71,6 @@ h2 {
     overflow: hidden;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .projects {
