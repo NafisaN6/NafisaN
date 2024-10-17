@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuLinks = document.querySelectorAll('.menu a, .dropbtn');
-    const dropdownContents = document.querySelectorAll('.dropdown-content');
     
     // Smooth scrolling to sections
     menuLinks.forEach(link => {
