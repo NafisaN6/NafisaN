@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="favicon.png" rel="icon" type="image/png">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CFU</title>
     <style>
         /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            background: linear-gradient(135deg, #ff6b6b, #f7b733);
+            background-size: 300% 300%;
+            animation: gradient 10s ease infinite;
+            font-family: 'Arial', sans-serif;
+            color: #28231C;
             margin: 0;
             padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #fff;
+            text-shadow: 2px 2px #317873;
+            margin-top: 30px;
         }
 
         .content-container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 20px;
             text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 5px solid #28231C;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .content-container:hover {
+            transform: scale(1.02);
         }
 
         .cfu-section {
             margin-bottom: 40px;
             padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            background: rgba(249, 249, 249, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
-        .cfu-section h1 {
-            font-size: 2em;
-            color: #444;
+        .cfu-section h2 {
+            font-size: 1.8em;
+            color: #317873;
             margin: 0 0 20px;
             padding: 10px;
-            border-bottom: 3px solid #3a86ff;
+            text-shadow: 1px 1px #ffffff;
         }
 
         iframe {
             display: block;
             width: 100%;
-            height: 700px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: 600px;
+            border: 2px solid #afd69b;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s;
+        }
+
+        iframe:hover {
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
@@ -56,79 +77,79 @@
 
         <!-- CFU 1 -->
         <div class="cfu-section">
-            <h1>CFU 1</h1>
+            <h2>CFU 1</h2>
             <iframe src="https://py3.codeskulptor.org/#user309_Ja28pLFXmbjtSSU.py"></iframe>
         </div>
 
         <!-- CFU 2 -->
         <div class="cfu-section">
-            <h1>CFU 2</h1>
+            <h2>CFU 2</h2>
             <iframe src="https://py3.codeskulptor.org/#user309_Ja28pLFXmbjtSSU_1.py"></iframe>
         </div>
 
         <!-- CFU 3 -->
         <div class="cfu-section">
-            <h1>CFU 3</h1>
+            <h2>CFU 3</h2>
             <iframe src="https://py3.codeskulptor.org/#user309_Ja28pLFXmbjtSSU_2.py"></iframe>
         </div>
 
         <!-- CFU 4/Group Challenge -->
         <div class="cfu-section">
-            <h1>CFU 4 / Group Challenge</h1>
+            <h2>CFU 4 / Group Challenge</h2>
             <iframe src="https://py3.codeskulptor.org/#user309_hDukHQaUXk_0.py"></iframe>
         </div>
 
         <!-- CFU 5 -->
         <div class="cfu-section">
-            <h1>CFU 5</h1>
+            <h2>CFU 5</h2>
             <iframe src="https://py3.codeskulptor.org/#user309_hDukHQaUXk_1.py"></iframe>
         </div>
 
         <!-- CFU 6 -->
         <div class="cfu-section">
-            <h1>CFU 6</h1>
+            <h2>CFU 6</h2>
             <iframe src="https://py3.codeskulptor.org/#user309_hDukHQaUXk_2.py"></iframe>
         </div>
 
         <!-- CFU 7 -->
         <div class="cfu-section">
-            <h1>CFU 7</h1>
+            <h2>CFU 7</h2>
             <iframe src="https://py3.codeskulptor.org/#user309_hDukHQaUXk_3.py"></iframe>
         </div>
 
         <!-- CFU 8 -->
         <div class="cfu-section">
-            <h1>CFU 8</h1>
+            <h2>CFU 8</h2>
             <iframe src="https://py3.codeskulptor.org/#user309_hDukHQaUXk_4.py"></iframe>
         </div>
 
         <!-- CFU 9 -->
         <div class="cfu-section">
-            <h1>CFU 9</h1>
+            <h2>CFU 9</h2>
             <iframe src="https://py3.codeskulptor.org/#user309_hDukHQaUXk_5.py"></iframe>
         </div>
 
         <!-- CFU 10 -->
         <div class="cfu-section">
-            <h1>CFU 10</h1>
+            <h2>CFU 10</h2>
             <iframe src="https://py3.codeskulptor.org/#user309_hDukHQaUXk_6.py"></iframe>
         </div>
 
         <!-- CFU 10 (Improved Version with Group) -->
         <div class="cfu-section">
-            <h1>CFU 10 (Improved Version with Group)</h1>
+            <h2>CFU 10 (Improved Version with Group)</h2>
             <iframe src="https://py3.codeskulptor.org/#user309_hDukHQaUXk_10.py"></iframe>
         </div>
 
         <!-- CFU 11 -->
         <div class="cfu-section">
-            <h1>CFU 11</h1>
+            <h2>CFU 11</h2>
             <iframe src="https://py3.codeskulptor.org/#user309_hDukHQaUXk_7.py"></iframe>
         </div>
 
         <!-- CFU 12 -->
         <div class="cfu-section">
-            <h1>CFU 12</h1>
+            <h2>CFU 12</h2>
             <iframe src="https://py3.codeskulptor.org/#user309_hDukHQaUXk_8.py"></iframe>
         </div>
 
