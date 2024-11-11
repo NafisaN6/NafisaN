@@ -19,7 +19,9 @@ canvas {
 }
 
 
+
 body {
+    min-height: 100vh; /* Ensures scrolling when content is taller than viewport */
     background: linear-gradient(135deg, #ff6b6b, #f7b733);
     background-size: 300% 300%;
     animation: gradient 10s ease infinite;
