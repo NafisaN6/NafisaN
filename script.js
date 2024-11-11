@@ -1,17 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Your particle animation code here
     const canvas = document.createElement("canvas");
     document.body.appendChild(canvas);
     const ctx = canvas.getContext("2d");
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    function resizeCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+
+    window.addEventListener("resize", resizeCanvas);
 
     let particles = [];
 
     function initParticles() {
         particles = [];
-        const numParticles = 100;
+        const numParticles = 150;
         for (let i = 0; i < numParticles; i++) {
             particles.push({
                 x: Math.random() * canvas.width,
@@ -25,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function animateParticles() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-
         particles.forEach(p => {
             p.x += p.speedX;
             p.y += p.speedY;
@@ -35,18 +38,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             ctx.beginPath();
             ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-            ctx.fillStyle = "white";
+            ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
             ctx.fill();
         });
 
         requestAnimationFrame(animateParticles);
     }
-
-    window.addEventListener("resize", () => {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        initParticles();
-    });
 
     initParticles();
     animateParticles();
