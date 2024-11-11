@@ -1,4 +1,4 @@
-/* General Styling for Body and HTML */
+
 html, body {
     height: 100%;
     width: 100%;
@@ -8,17 +8,17 @@ html, body {
     overflow: hidden;
 }
 
-/* Canvas for Particle Animation */
+
 canvas {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Ensure particles stay in the background */
+    z-index: -1; 
 }
 
-/* Gradient Background Animation */
+
 body {
     background: linear-gradient(135deg, #ff6b6b, #f7b733);
     background-size: 300% 300%;
@@ -26,7 +26,7 @@ body {
     color: white;
 }
 
-/* Banner Section */
+
 .banner {
     background: rgba(255, 255, 255, 0.8);
     margin: 20px auto;
@@ -52,7 +52,7 @@ body {
     margin: 10px 0;
 }
 
-/* Menu Styling */
+
 .menu {
     text-align: center;
     margin: 20px 0;
@@ -100,7 +100,7 @@ body {
     background-color: #f1f1f1;
 }
 
-/* Links Section - Projects and CFU Buttons */
+
 .links-section {
     display: flex;
     justify-content: center;
@@ -136,7 +136,7 @@ body {
     color: #fff;
 }
 
-/* About Me Section */
+
 .container {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -160,7 +160,7 @@ body {
     color: #444;
 }
 
-/* Contact Section */
+
 #contact {
     background-color: rgba(50, 50, 50, 0.9);
     color: white;
@@ -177,14 +177,14 @@ body {
     margin: 10px 0;
 }
 
-/* Keyframes for Gradient Animation */
+
 @keyframes gradient {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* Additional Button Hover Effects for CFUS and Projects */
+
 .menu .dropdown:hover .dropbtn {
     background-color: #5f9ea0;
     color: #fff;
@@ -192,7 +192,7 @@ body {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Styling for Bio */
+
 .container h2 {
     font-size: 2.5em;
     color: #317873;
