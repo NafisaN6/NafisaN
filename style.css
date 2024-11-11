@@ -1,21 +1,24 @@
 
 html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    height: 100%;  
+    width: 100%;   
+    margin: 0;     
+    padding: 0;    
+    overflow-y: scroll;  
     font-family: 'Arial', sans-serif;
-    overflow: auto;
+    color: white;
 }
 
 
+
 canvas {
-    position: absoulute;
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; 
+    z-index: -1;  
+    pointer-events: none;  
 }
 
 
