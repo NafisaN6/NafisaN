@@ -1,58 +1,41 @@
+/* General Styling for Body and HTML */
 html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     font-family: 'Arial', sans-serif;
+    overflow: hidden;
 }
 
-/* Background Canvas */
+/* Canvas for Particle Animation */
 canvas {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -1; /* Ensure particles stay in the background */
 }
 
-/* Animated Gradient Background */
+/* Gradient Background Animation */
 body {
     background: linear-gradient(135deg, #ff6b6b, #f7b733);
     background-size: 300% 300%;
     animation: gradient 10s ease infinite;
-    color: #fff;
+    color: white;
 }
 
-/* Title Styling */
-h2 {
-    font-size: 3em;
-    color: #ffffff;
-    text-shadow: 2px 2px #317873;
-    text-align: center;
-    margin: 20px 0;
-}
-
-/* Banner Styling */
+/* Banner Section */
 .banner {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
     margin: 20px auto;
-    padding: 20px;
+    padding: 30px;
     width: 80%;
+    text-align: center;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    color: #333;
     position: relative;
-    overflow: hidden;
-}
-
-.banner h1 {
-    font-family: 'Georgia', serif;
-    color: #317873;
-    text-shadow: 1px 1px #ffffff;
-    margin: 10px 0;
 }
 
 #logo {
@@ -62,18 +45,62 @@ h2 {
     right: 20px;
 }
 
-/* Container Styling */
-.container {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    padding: 20px;
-    width: 80%;
-    margin: 20px auto;
-    color: #333;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+.banner h1 {
+    font-family: 'Georgia', serif;
+    color: #317873;
+    text-shadow: 1px 1px #ffffff;
+    margin: 10px 0;
 }
 
-/* Links Section */
+/* Menu Styling */
+.menu {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.dropbtn {
+    font-size: 1.2em;
+    padding: 12px 24px;
+    background-color: #444;
+    color: #fff;
+    border: 2px solid #5f9ea0;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #5f9ea0;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #28231C;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Links Section - Projects and CFU Buttons */
 .links-section {
     display: flex;
     justify-content: center;
@@ -83,7 +110,6 @@ h2 {
     border-radius: 15px;
     margin: 20px auto;
     width: 80%;
-    text-align: center;
 }
 
 .link-box {
@@ -92,27 +118,58 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s;
+    text-align: center;
 }
 
 .link-box a {
     color: #fff;
     text-decoration: none;
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 .link-box:hover {
     background-color: #5f9ea0;
 }
 
-/* Contact Section */
-#contact {
-    background-color: rgba(50, 50, 50, 0.9);
+.link-box a:hover {
     color: #fff;
-    border-radius: 15px;
+}
+
+/* About Me Section */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     width: 80%;
     margin: 20px auto;
     text-align: center;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.container h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #317873;
+}
+
+.container h3 {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Contact Section */
+#contact {
+    background-color: rgba(50, 50, 50, 0.9);
+    color: white;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 #contact p {
@@ -125,4 +182,25 @@ h2 {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+}
+
+/* Additional Button Hover Effects for CFUS and Projects */
+.menu .dropdown:hover .dropbtn {
+    background-color: #5f9ea0;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for Bio */
+.container h2 {
+    font-size: 2.5em;
+    color: #317873;
+    margin-bottom: 15px;
+}
+
+.container h3 {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
 }
